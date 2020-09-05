@@ -1,0 +1,7 @@
+def Convertminutes(n): 
+	seconds = n * 60; 
+	print("Seconds = " , seconds); 
+
+n = int(input()); 
+Convertminutes(n); 
+

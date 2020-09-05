@@ -1,0 +1,18 @@
+int main()
+{
+    char a, word[50];
+    int i;
+    printf("Enter character: ");
+    scanf("%c", &a);
+    printf("Now enter the word: ");
+    scanf("%s", word);
+    printf("Positions of '%c' in %s are: ", a, word);
+    for (i = 0; i < strlen(word); i++)
+    {
+        if (word[i] == a)
+        {
+            printf("%d  ", i + 1);
+        }
+    }
+    return 0;
+}

@@ -1,0 +1,32 @@
+ #include<stdio.h> 
+ #include<string.h>
+int main()
+{
+    int i,n,j,l,p=0;
+    char a[100],r[100]; 
+   
+    printf("Enter size of the  array : ");
+    scanf("%d", &n);
+    printf("Enter elements in array : ");
+    for(i=0; i<n; i++)
+    {
+        scanf("%s",&a[i]);
+    }
+    for(j=0; j<n; j++)
+    {
+        l=strlen(a[j]);
+        for (i = 0; i < l; i++)
+        {
+    	    if (a[j] == 'a')
+           {
+           	r[p]=a[j];
+		p++;
+           }
+        }
+    }
+    for(i=0;i<p;i++)
+    {
+	printf("resultant array %c",r[i]);
+    }
+
+}
