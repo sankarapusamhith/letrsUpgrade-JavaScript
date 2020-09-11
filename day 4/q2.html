@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>question 2</title>
+    </head>
+    <body>
+        <form>
+        <input type="text" name="form1" ><br><br>
+        <input type="radio" name="button1" onclick="but(this.form)" value="click"><br><br>
+        <input type="text" name="form2">
+        </form>
+        <script>
+            function but(b)
+            {
+                if(b.button1.checked==true)
+                {
+                    b.form2.value=b.form1.value;
+                }
+            }
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>question 4</title>
+    </head>
+    <body>
+        <script>
+            function displayage()
+            {
+                 let a=arr.filter(arr=>arr.age<30);
+                 console.log("age<30")
+                 console.log(a);
+            }
+            function displaycountry()
+            {
+                let c=arr.filter(arr=>arr.country=="india");
+                console.log("country='india'");
+                console.log(c);          
+            }
+            let arr=[
+                {name:'samhith',age:22, country:"india",hobbies:["cricket","songs"]},
+                {name:'sam',age:30, country:"india",hobbies:["reading","tv"]},
+                {name:'ram',age:20, country:"usa",hobbies:["swim","travel"]},
+                {name:'hritik',age:35, country:"england",hobbies:["eating","racing"]}         
+                ];
+            displayage();
+            displaycountry();
+        </script>
+    </body>
+</html>
